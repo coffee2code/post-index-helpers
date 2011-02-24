@@ -2,11 +2,11 @@
 /**
  * @package Post_Index_Helpers
  * @author Scott Reilly
- * @version 1.0.1
+ * @version 1.0.2
  */
 /*
 Plugin Name: Post Index Helpers
-Version: 1.0.1
+Version: 1.0.2
 Plugin URI: http://coffee2code.com/wp-plugins/post-index-helpers/
 Author: Scott Reilly
 Author URI: http://coffee2code.com

@@ -4,8 +4,8 @@ Donate link: http://coffee2code.com/donate
 Tags: post, index, position, loop, template tags, conditional, coffee2code
 Requires at least: 2.8
 Tested up to: 3.1
-Stable tag: 1.0.1
-Version: 1.0.1
+Stable tag: 1.0.2
+Version: 1.0.2
 
 A variety of template tags related to the index/position of a post within a loop's listing of posts.
 
@@ -38,6 +38,8 @@ While the remaining two functions relate to index information about the loop in 
 Please see the Template Tags section (in some places found under the Other Notes section) for descriptions of all the functions and their arguments.
 
 Note that index counting begins at 0, which means the first item has an index of 0.  An index of -1 indicates no posts were found.
+
+Links: [Plugin Homepage]:(http://coffee2code.com/wp-plugins/post-index-helpers/) | [Author Homepage]:(http://coffee2code.com)
 
 
 == Installation ==
@@ -120,6 +122,9 @@ Integer value representing the index at the end of the range (value is inclusive
 
 == Changelog ==
 
+= 1.0.2 =
+* Add link to plugin homepage to description in readme.txt
+
 = 1.0.1 =
 * Note compatibility through WP 3.1+
 * Update copyright date (2011)
@@ -130,6 +135,9 @@ Integer value representing the index at the end of the range (value is inclusive
 
 
 == Upgrade Notice ==
+
+= 1.0.2 =
+Trivial update: add link to plugin homepage to description in readme.txt
 
 = 1.0.1 =
 Trivial update: noted compatibility with WP 3.1+ and updated copyright date.
