@@ -3,9 +3,9 @@ Contributors: coffee2code
 Donate link: http://coffee2code.com/donate
 Tags: post, index, position, loop, template tags, conditional, coffee2code
 Requires at least: 2.8
-Tested up to: 3.1
-Stable tag: 1.0.2
-Version: 1.0.2
+Tested up to: 3.2
+Stable tag: 1.0.3
+Version: 1.0.3
 
 A variety of template tags related to the index/position of a post within a loop's listing of posts.
 
@@ -16,30 +16,30 @@ A variety of template tags related to the index/position of a post within a loop
 
 Some of the template tags provided by this plugin relate to the position of the current post within the current loop:
 
-* c2c_is_first()
-* c2c_is_last()
-* c2C_is_at_index()
-* c2c_is_even()
-* c2c_is_odd()
-* c2c_get_the_index()
-* c2c_is_index_within()
-* c2c_the_index()
+* `c2c_is_first()`
+* `c2c_is_last()`
+* `c2c_is_at_index()`
+* `c2c_is_even()`
+* `c2c_is_odd()`
+* `c2c_get_the_index()`
+* `c2c_is_index_within()`
+* `c2c_the_index()`
 
 Other functions help you get a post (or posts) at a given position in the current loop:
 
-* c2c_get_post_by_index()
-* c2c_get_posts_by_index()
+* `c2c_get_post_by_index()`
+* `c2c_get_posts_by_index()`
 
 While the remaining two functions relate to index information about the loop in general:
 
-* c2c_get_last_index()
-* c2c_is_valid_index()
+* `c2c_get_last_index()`
+* `c2c_is_valid_index()`
 
 Please see the Template Tags section (in some places found under the Other Notes section) for descriptions of all the functions and their arguments.
 
 Note that index counting begins at 0, which means the first item has an index of 0.  An index of -1 indicates no posts were found.
 
-Links: [Plugin Homepage]:(http://coffee2code.com/wp-plugins/post-index-helpers/) | [Author Homepage]:(http://coffee2code.com)
+Links: [Plugin Homepage](http://coffee2code.com/wp-plugins/post-index-helpers/) | [Author Homepage](http://coffee2code.com)
 
 
 == Installation ==
@@ -122,6 +122,12 @@ Integer value representing the index at the end of the range (value is inclusive
 
 == Changelog ==
 
+= 1.0.3 =
+* Note compatibility through WP 3.2+
+* Minor code formatting changes (spacing)
+* Minor readme.txt formatting changes
+* Fix plugin homepage and author links in description in readme.txt
+
 = 1.0.2 =
 * Add link to plugin homepage to description in readme.txt
 
@@ -135,6 +141,9 @@ Integer value representing the index at the end of the range (value is inclusive
 
 
 == Upgrade Notice ==
+
+= 1.0.3 =
+Trivial update: noted compatibility through WP 3.2+
 
 = 1.0.2 =
 Trivial update: add link to plugin homepage to description in readme.txt

@@ -2,17 +2,17 @@
 /**
  * @package Post_Index_Helpers
  * @author Scott Reilly
- * @version 1.0.2
+ * @version 1.0.3
  */
 /*
 Plugin Name: Post Index Helpers
-Version: 1.0.2
+Version: 1.0.3
 Plugin URI: http://coffee2code.com/wp-plugins/post-index-helpers/
 Author: Scott Reilly
 Author URI: http://coffee2code.com
 Description: A variety of template tags related to the index/position of a post within a loop's listing of posts.
 
-Compatible with WordPress 2.8+, 2.9+, 3.0+, 3.1+.
+Compatible with WordPress 2.8+, 2.9+, 3.0+, 3.1+, 3.2+.
 
 =>> Read the accompanying readme.txt file for instructions and documentation.
 =>> Also, visit the plugin's homepage for additional information and updates.
@@ -36,7 +36,7 @@ LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRA
 IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 */
 
-if ( !function_exists( 'c2c_get_last_index' ) ) {
+if ( ! function_exists( 'c2c_get_last_index' ) ) {
 	/**
 	 * Gets the index number for the last post in the loop listing
 	 *
@@ -44,13 +44,13 @@ if ( !function_exists( 'c2c_get_last_index' ) ) {
 	 * @return int Index for last post in the loop listing
 	 */
 	function c2c_get_last_index( $wp_query = null ) {
-		if ( !$wp_query )
+		if ( ! $wp_query )
 			global $wp_query;
 		return $wp_query->post_count - 1;
 	}
 }
 
-if ( !function_exists( 'c2c_get_post_by_index' ) ) {
+if ( ! function_exists( 'c2c_get_post_by_index' ) ) {
 	/**
 	 * Get post based on specified index
 	 *
@@ -59,13 +59,13 @@ if ( !function_exists( 'c2c_get_post_by_index' ) ) {
 	 * @return mixed Post data
 	 */
 	function c2c_get_post_by_index( $index, $wp_query = null ) {
-		if ( !$wp_query )
+		if ( ! $wp_query )
 			global $wp_query;
 		return $wp_query->posts[$index];
 	}
 }
 
-if ( !function_exists( 'c2c_get_posts_by_index' ) ) {
+if ( ! function_exists( 'c2c_get_posts_by_index' ) ) {
 	/**
 	 * Get posts based on specified array of indexes
 	 *
@@ -74,7 +74,7 @@ if ( !function_exists( 'c2c_get_posts_by_index' ) ) {
 	 * @return array Posts
 	 */
 	function c2c_get_posts_by_index( $indexes, $wp_query = null ) {
-		if ( !$wp_query )
+		if ( ! $wp_query )
 			global $wp_query;
 		$posts = array();
 		foreach ( $indexes as $index )
@@ -83,7 +83,7 @@ if ( !function_exists( 'c2c_get_posts_by_index' ) ) {
 	}
 }
 
-if ( !function_exists( 'c2c_get_the_index' ) ) {
+if ( ! function_exists( 'c2c_get_the_index' ) ) {
 	/**
 	 * Get the index for the current post
 	 *
@@ -91,13 +91,13 @@ if ( !function_exists( 'c2c_get_the_index' ) ) {
 	 * @return int Index of current post
 	 */
 	function c2c_get_the_index( $wp_query = null ) {
-		if ( !$wp_query )
+		if ( ! $wp_query )
 			global $wp_query;
 		return $wp_query->current_post;
 	}
 }
 
-if ( !function_exists( 'c2c_is_at_index' ) ) {
+if ( ! function_exists( 'c2c_is_at_index' ) ) {
 	/**
 	 * Is the current index at the specified index?
 	 *
@@ -110,7 +110,7 @@ if ( !function_exists( 'c2c_is_at_index' ) ) {
 	}
 }
 
-if ( !function_exists( 'c2c_is_even' ) ) {
+if ( ! function_exists( 'c2c_is_even' ) ) {
 	/**
 	 * Is the current post at an even position? (i.e. 0, 2, 4, ...)
 	 *
@@ -123,7 +123,7 @@ if ( !function_exists( 'c2c_is_even' ) ) {
 	}
 }
 
-if ( !function_exists( 'c2c_is_first' ) ) {
+if ( ! function_exists( 'c2c_is_first' ) ) {
 	/**
 	 * Is the current post the first listed post?
 	 *
@@ -135,7 +135,7 @@ if ( !function_exists( 'c2c_is_first' ) ) {
 	}
 }
 
-if ( !function_exists( 'c2c_is_last' ) ) {
+if ( ! function_exists( 'c2c_is_last' ) ) {
 	/**
 	 * Is the current post the last listed post?
 	 *
@@ -148,7 +148,7 @@ if ( !function_exists( 'c2c_is_last' ) ) {
 	}
 }
 
-if ( !function_exists( 'c2c_is_odd' ) ) {
+if ( ! function_exists( 'c2c_is_odd' ) ) {
 	/**
 	 * Is the current post at an odd position? (i.e. 1, 3, 5, ...)
 	 *
@@ -160,7 +160,7 @@ if ( !function_exists( 'c2c_is_odd' ) ) {
 	}
 }
 
-if ( !function_exists( 'c2c_is_index_within' ) ) {
+if ( ! function_exists( 'c2c_is_index_within' ) ) {
 	/**
 	 * Is the current post (or one at the specified index) within the bounds of a specified range?
 	 *
@@ -171,13 +171,13 @@ if ( !function_exists( 'c2c_is_index_within' ) ) {
 	 * @return bool True if the index is within the specified range, otherwise false
 	 */
 	function c2c_is_index_within( $start_index, $end_index, $index = null, $wp_query = null ) {
-		if ( !$index )
+		if ( ! $index )
 			$index = c2c_get_the_index( $wp_query );
 		return ( $index >= $start_index && $index <= $end_index ? true : false );
 	}
 }
 
-if ( !function_exists( 'c2c_is_valid_index' ) ) {
+if ( ! function_exists( 'c2c_is_valid_index' ) ) {
 	/**
 	 * Is the specified index valid?  Validity is defined as being within the range of indexes actively occupied by
 	 * posts in the current loop listing.
@@ -191,7 +191,7 @@ if ( !function_exists( 'c2c_is_valid_index' ) ) {
 	}
 }
 
-if ( !function_exists( 'c2c_the_index' ) ) {
+if ( ! function_exists( 'c2c_the_index' ) ) {
 	/**
 	 * Echo the current post's index
 	 *
