@@ -2,17 +2,17 @@
 /**
  * @package Post_Index_Helpers
  * @author Scott Reilly
- * @version 1.0.3
+ * @version 1.1
  */
 /*
 Plugin Name: Post Index Helpers
-Version: 1.0.3
+Version: 1.1
 Plugin URI: http://coffee2code.com/wp-plugins/post-index-helpers/
 Author: Scott Reilly
 Author URI: http://coffee2code.com
 Description: A variety of template tags related to the index/position of a post within a loop's listing of posts.
 
-Compatible with WordPress 2.8+, 2.9+, 3.0+, 3.1+, 3.2+.
+Compatible with WordPress 2.8+, 2.9+, 3.0+, 3.1+, 3.2+, 3.3+.
 
 =>> Read the accompanying readme.txt file for instructions and documentation.
 =>> Also, visit the plugin's homepage for additional information and updates.
@@ -21,7 +21,7 @@ Compatible with WordPress 2.8+, 2.9+, 3.0+, 3.1+, 3.2+.
 */
 
 /*
-Copyright (c) 2010-2011 by Scott Reilly (aka coffee2code)
+Copyright (c) 2010-2012 by Scott Reilly (aka coffee2code)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation
 files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy,
@@ -135,6 +135,23 @@ if ( ! function_exists( 'c2c_is_first' ) ) {
 	}
 }
 
+if ( ! function_exists( 'c2c_is_index_within' ) ) {
+	/**
+	 * Is the current post (or one at the specified index) within the bounds of a specified range?
+	 *
+	 * @param int $start_index The index at the start of the range (value is inclusive)
+	 * @param int $end_index The index at the end of the range (value is inclusive)
+	 * @param int $index The index to check if it is within the specified range.  If null, then uses index of current post.
+	 * @param WP_Query $wp_query A WP_Query object.  If not defined or null, then uses the global $wp_query
+	 * @return bool True if the index is within the specified range, otherwise false
+	 */
+	function c2c_is_index_within( $start_index, $end_index, $index = null, $wp_query = null ) {
+		if ( ! $index )
+			$index = c2c_get_the_index( $wp_query );
+		return ( $index >= $start_index && $index <= $end_index ? true : false );
+	}
+}
+
 if ( ! function_exists( 'c2c_is_last' ) ) {
 	/**
 	 * Is the current post the last listed post?
@@ -160,20 +177,25 @@ if ( ! function_exists( 'c2c_is_odd' ) ) {
 	}
 }
 
-if ( ! function_exists( 'c2c_is_index_within' ) ) {
+if ( ! function_exists( 'c2c_is_post_in_loop' ) ) {
 	/**
-	 * Is the current post (or one at the specified index) within the bounds of a specified range?
+	 * Is the specified post within the current loop?
 	 *
-	 * @param int $start_index The index at the start of the range (value is inclusive)
-	 * @param int $end_index The index at the end of the range (value is inclusive)
-	 * @param int $index The index to check if it is within the specified range.  If null, then uses index of current post.
+	 * @param int $post_id The ID of the post to check for
 	 * @param WP_Query $wp_query A WP_Query object.  If not defined or null, then uses the global $wp_query
-	 * @return bool True if the index is within the specified range, otherwise false
+	 * @return bool True if the post is part of the loop, otherwise false
 	 */
-	function c2c_is_index_within( $start_index, $end_index, $index = null, $wp_query = null ) {
-		if ( ! $index )
-			$index = c2c_get_the_index( $wp_query );
-		return ( $index >= $start_index && $index <= $end_index ? true : false );
+	function c2c_is_post_in_loop( $post_id, $wp_query = null ) {
+		if ( ! $wp_query )
+			global $wp_query;
+		$in_loop = false;
+		foreach ( $wp_query->posts as $post ) {
+			if ( $post->ID == $post_id ) {
+				$in_loop = true;
+				break;
+			}
+		}
+		return $in_loop;
 	}
 }
 

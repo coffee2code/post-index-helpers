@@ -3,9 +3,9 @@ Contributors: coffee2code
 Donate link: http://coffee2code.com/donate
 Tags: post, index, position, loop, template tags, conditional, coffee2code
 Requires at least: 2.8
-Tested up to: 3.2
-Stable tag: 1.0.3
-Version: 1.0.3
+Tested up to: 3.3
+Stable tag: 1.1
+Version: 1.1
 
 A variety of template tags related to the index/position of a post within a loop's listing of posts.
 
@@ -30,16 +30,17 @@ Other functions help you get a post (or posts) at a given position in the curren
 * `c2c_get_post_by_index()`
 * `c2c_get_posts_by_index()`
 
-While the remaining two functions relate to index information about the loop in general:
+While the remaining three functions relate to index information about the loop in general:
 
 * `c2c_get_last_index()`
+* `c2c_is_post_in_loop()`
 * `c2c_is_valid_index()`
 
 Please see the Template Tags section (in some places found under the Other Notes section) for descriptions of all the functions and their arguments.
 
 Note that index counting begins at 0, which means the first item has an index of 0.  An index of -1 indicates no posts were found.
 
-Links: [Plugin Homepage](http://coffee2code.com/wp-plugins/post-index-helpers/) | [Author Homepage](http://coffee2code.com)
+Links: [Plugin Homepage](http://coffee2code.com/wp-plugins/post-index-helpers/) | [Plugin Directory Page](http://wordpress.org/extend/plugins/post-index-helpers/) | [Author Homepage](http://coffee2code.com)
 
 
 == Installation ==
@@ -75,6 +76,8 @@ Is the current post the last listed post?
 Is the current post at an odd position? (i.e. 1, 3, 5, ...)
 * `<?php function c2c_is_index_within( $start_index, $end_index, $index = null, $wp_query = null ) ?>`
 Is the current post (or one at the specified index) within the bounds of a specified range?
+* `<?phh function c2c_is_post_in_loop( $post_id, $wp_query = null ) ?>`
+Is the specified post within the current loop?
 * `<?php function c2c_is_valid_index( $index, $wp_query = null ) ?>`
 Is the specified index valid?  Validity is defined as being within the range of indexes actively occupied by posts in the current loop listing.
 * `<?php function c2c_the_index( $wp_query = null ) ?>`
@@ -96,6 +99,9 @@ Integer value representing the index at the start of the range (value is inclusi
 
 * `$end_index`
 Integer value representing the index at the end of the range (value is inclusive)
+
+* `$post_id`
+Integer value representing the ID of the post.
 
 = Examples =
 
@@ -122,6 +128,13 @@ Integer value representing the index at the end of the range (value is inclusive
 
 == Changelog ==
 
+= 1.1 =
+* Add c2c_is_post_in_loop()
+* Move c2c_is_index_within() to achieve alphabetic arrangement of functions
+* Note compatibility through WP 3.3+
+* Add link to plugin directory page to readme.txt
+* Update copyright date (2012)
+
 = 1.0.3 =
 * Note compatibility through WP 3.2+
 * Minor code formatting changes (spacing)
@@ -141,6 +154,9 @@ Integer value representing the index at the end of the range (value is inclusive
 
 
 == Upgrade Notice ==
+
+= 1.1 =
+Minor update: added new function c2c_is_post_in_loop() and noted compatibility through WP 3.3+
 
 = 1.0.3 =
 Trivial update: noted compatibility through WP 3.2+
