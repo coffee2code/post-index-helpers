@@ -2,10 +2,12 @@
 Contributors: coffee2code
 Donate link: http://coffee2code.com/donate
 Tags: post, index, position, loop, template tags, conditional, coffee2code
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Requires at least: 2.8
-Tested up to: 3.3
-Stable tag: 1.1
-Version: 1.1
+Tested up to: 3.4
+Stable tag: 1.1.1
+Version: 1.1.1
 
 A variety of template tags related to the index/position of a post within a loop's listing of posts.
 
@@ -128,6 +130,12 @@ Integer value representing the ID of the post.
 
 == Changelog ==
 
+= 1.1.1 =
+* Re-license as GPLv2 or later (from X11)
+* Add 'License' and 'License URI' header tags to readme.txt and plugin file
+* Remove ending PHP close tag
+* Note compatibility through WP 3.4+
+
 = 1.1 =
 * Add c2c_is_post_in_loop()
 * Move c2c_is_index_within() to achieve alphabetic arrangement of functions
@@ -154,6 +162,9 @@ Integer value representing the ID of the post.
 
 
 == Upgrade Notice ==
+
+= 1.1.1 =
+Trivial update: noted compatibility through WP 3.4+; explicitly stated license
 
 = 1.1 =
 Minor update: added new function c2c_is_post_in_loop() and noted compatibility through WP 3.3+
