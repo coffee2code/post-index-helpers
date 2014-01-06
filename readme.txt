@@ -1,20 +1,19 @@
 === Post Index Helpers ===
 Contributors: coffee2code
-Donate link: http://coffee2code.com/donate
+Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6ARCFJ9TX3522
 Tags: post, index, position, loop, template tags, conditional, coffee2code
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Requires at least: 2.8
-Tested up to: 3.5
-Stable tag: 1.1.2
-Version: 1.1.2
+Tested up to: 3.8
+Stable tag: 1.2
 
 A variety of template tags related to the index/position of a post within a loop's listing of posts.
 
 
 == Description ==
 
-A variety of template tags related to the index/position of a post within a loop's listing of posts.
+This plugin provides thirteen handy template tags that relate to the index/position of a post within a loop's listing of posts.
 
 Some of the template tags provided by this plugin relate to the position of the current post within the current loop:
 
@@ -40,9 +39,9 @@ While the remaining three functions relate to index information about the loop i
 
 Please see the Template Tags section (in some places found under the Other Notes section) for descriptions of all the functions and their arguments.
 
-Note that index counting begins at 0, which means the first item has an index of 0.  An index of -1 indicates no posts were found.
+Note that index counting begins at 0, which means the first item has an index of 0. An index of -1 indicates no posts were found.
 
-Links: [Plugin Homepage](http://coffee2code.com/wp-plugins/post-index-helpers/) | [Plugin Directory Page](http://wordpress.org/extend/plugins/post-index-helpers/) | [Author Homepage](http://coffee2code.com)
+Links: [Plugin Homepage](http://coffee2code.com/wp-plugins/post-index-helpers/) | [Plugin Directory Page](http://wordpress.org/plugins/post-index-helpers/) | [Author Homepage](http://coffee2code.com)
 
 
 == Installation ==
@@ -54,7 +53,7 @@ Links: [Plugin Homepage](http://coffee2code.com/wp-plugins/post-index-helpers/) 
 
 == Template Tags ==
 
-The plugin provides twelve template tags for use in your theme templates.
+The plugin provides thirteen template tags for use in your theme templates.
 
 = Functions =
 
@@ -94,7 +93,7 @@ Integer value representing an index.
 Array of integer values representing indexes.
 
 * `$wp_query`
-(optional) A custom WP_Query object.  If null or not defined, then the global wp_query object is used. (Specifying this is not typical.)
+(optional) A custom WP_Query object. If null or not defined, then the global wp_query object is used. (Specifying this is not typical.)
 
 * `$start_index`
 Integer value representing the index at the start of the range (value is inclusive)
@@ -129,6 +128,17 @@ Integer value representing the ID of the post.
 
 
 == Changelog ==
+
+= 1.2 =
+* Fix c2c_is_odd() to return false if the loop hasn't started
+* Fix c2c_get_last_index() to explicitly check that $index arg is null before assuming current index
+* Fix to prevent warnings if invalid index(es) are sent to c2c_get_post_by_index() and c2c_get_posts_by_index()
+* Add unit tests
+* Note compatibility through WP 3.8+
+* Update copyright date (2014)
+* Minor code and documentation reformatting (spacing, bracing)
+* Change donate link
+* Add banner image
 
 = 1.1.2 =
 * Note compatibility through WP 3.5+
@@ -166,6 +176,9 @@ Integer value representing the ID of the post.
 
 
 == Upgrade Notice ==
+
+= 1.2 =
+Recommended minor update: fixed a few small bugs; added unit tests; noted compatibility through WP 3.8+
 
 = 1.1.2 =
 Trivial update: noted compatibility through WP 3.5+
