@@ -5,8 +5,8 @@ Tags: post, index, position, loop, template tags, conditional, coffee2code
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Requires at least: 2.8
-Tested up to: 3.8
-Stable tag: 1.2
+Tested up to: 4.0
+Stable tag: 1.2.1
 
 A variety of template tags related to the index/position of a post within a loop's listing of posts.
 
@@ -41,7 +41,7 @@ Please see the Template Tags section (in some places found under the Other Notes
 
 Note that index counting begins at 0, which means the first item has an index of 0. An index of -1 indicates no posts were found.
 
-Links: [Plugin Homepage](http://coffee2code.com/wp-plugins/post-index-helpers/) | [Plugin Directory Page](http://wordpress.org/plugins/post-index-helpers/) | [Author Homepage](http://coffee2code.com)
+Links: [Plugin Homepage](http://coffee2code.com/wp-plugins/post-index-helpers/) | [Plugin Directory Page](https://wordpress.org/plugins/post-index-helpers/) | [Author Homepage](http://coffee2code.com)
 
 
 == Installation ==
@@ -129,6 +129,13 @@ Integer value representing the ID of the post.
 
 == Changelog ==
 
+= 1.2.1 (2014-08-26) =
+* Die early if script is directly invoked
+* Minor plugin header reformatting
+* Change documentation links to wp.org to be https
+* Note compatibility through WP 4.0+
+* Add plugin icon
+
 = 1.2 =
 * Fix c2c_is_odd() to return false if the loop hasn't started
 * Fix c2c_get_last_index() to explicitly check that $index arg is null before assuming current index
@@ -176,6 +183,9 @@ Integer value representing the ID of the post.
 
 
 == Upgrade Notice ==
+
+= 1.2.1 =
+Trivial update: noted compatibility through WP 4.0+; minor documentation tweaks; added plugin icon
 
 = 1.2 =
 Recommended minor update: fixed a few small bugs; added unit tests; noted compatibility through WP 3.8+

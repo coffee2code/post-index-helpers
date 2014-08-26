@@ -1,26 +1,24 @@
 <?php
 /**
+ * Plugin Name: Post Index Helpers
+ * Version:     1.2.1
+ * Plugin URI:  http://coffee2code.com/wp-plugins/post-index-helpers/
+ * Author:      Scott Reilly
+ * Author URI:  http://coffee2code.com/
+ * License:     GPLv2 or later
+ * License URI: http://www.gnu.org/licenses/gpl-2.0.html
+ * Description: A variety of template tags related to the index/position of a post within a loop's listing of posts.
+ *
+ * Compatible with WordPress 2.8 through 4.0+.
+ *
+ * =>> Read the accompanying readme.txt file for instructions and documentation.
+ * =>> Also, visit the plugin's homepage for additional information and updates.
+ * =>> Or visit: https://wordpress.org/extend/plugins/post-index-helpers/
+ *
  * @package Post_Index_Helpers
  * @author Scott Reilly
- * @version 1.2
+ * @version 1.2.1
  */
-/*
-Plugin Name: Post Index Helpers
-Version: 1.2
-Plugin URI: http://coffee2code.com/wp-plugins/post-index-helpers/
-Author: Scott Reilly
-Author URI: http://coffee2code.com/
-License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Description: A variety of template tags related to the index/position of a post within a loop's listing of posts.
-
-Compatible with WordPress 2.8 through 3.8+.
-
-=>> Read the accompanying readme.txt file for instructions and documentation.
-=>> Also, visit the plugin's homepage for additional information and updates.
-=>> Or visit: http://wordpress.org/extend/plugins/post-index-helpers/
-
-*/
 
 /*
 	Copyright (c) 2010-2014 by Scott Reilly (aka coffee2code)
@@ -39,6 +37,8 @@ Compatible with WordPress 2.8 through 3.8+.
 	along with this program; if not, write to the Free Software
 	Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 */
+
+defined( 'ABSPATH' ) or die();
 
 if ( ! function_exists( 'c2c_get_last_index' ) ) {
 	/**
