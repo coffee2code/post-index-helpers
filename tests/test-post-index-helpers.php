@@ -17,7 +17,7 @@ class Post_Index_Helpers_Test extends WP_UnitTestCase {
 	}
 
 
-	/**
+	/*
 	 *
 	 * HELPER FUNCTIONS
 	 *
@@ -42,7 +42,7 @@ class Post_Index_Helpers_Test extends WP_UnitTestCase {
 	}
 
 
-	/**
+	/*
 	 *
 	 * TESTS
 	 *

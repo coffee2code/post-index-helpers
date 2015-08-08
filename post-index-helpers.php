@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Post Index Helpers
- * Version:     1.2.2
+ * Version:     1.2.3
  * Plugin URI:  http://coffee2code.com/wp-plugins/post-index-helpers/
  * Author:      Scott Reilly
  * Author URI:  http://coffee2code.com/
@@ -9,15 +9,15 @@
  * License URI: http://www.gnu.org/licenses/gpl-2.0.html
  * Description: A variety of template tags related to the index/position of a post within a loop's listing of posts.
  *
- * Compatible with WordPress 2.8 through 4.1+.
+ * Compatible with WordPress 2.8 through 4.3+.
  *
  * =>> Read the accompanying readme.txt file for instructions and documentation.
  * =>> Also, visit the plugin's homepage for additional information and updates.
- * =>> Or visit: https://wordpress.org/extend/plugins/post-index-helpers/
+ * =>> Or visit: https://wordpress.org/plugins/post-index-helpers/
  *
  * @package Post_Index_Helpers
- * @author Scott Reilly
- * @version 1.2.2
+ * @author  Scott Reilly
+ * @version 1.2.3
  */
 
 /*
