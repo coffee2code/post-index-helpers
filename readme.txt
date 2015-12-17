@@ -5,8 +5,8 @@ Tags: post, index, position, loop, template tags, conditional, coffee2code
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Requires at least: 2.8
-Tested up to: 4.3
-Stable tag: 1.2.3
+Tested up to: 4.4
+Stable tag: 1.2.4
 
 A variety of template tags related to the index/position of a post within a loop's listing of posts.
 
@@ -129,6 +129,13 @@ Integer value representing the ID of the post.
 
 == Changelog ==
 
+= 1.2.4 (2015-12-16) =
+* Change: Note compatibility through WP 4.4+.
+* Change: Explicitly declare methods in unit tests as public.
+* Change: Update copyright date (2016).
+* Add: Define 'Text Domain' header attribute.
+* Add: Create empty index.php to prevent files from being listed if web server has enabled directory listings.
+
 = 1.2.3 (2015-08-08) =
 * Note compatibility through WP 4.3+
 * Minor code comment tweaks
@@ -191,6 +198,9 @@ Integer value representing the ID of the post.
 
 
 == Upgrade Notice ==
+
+= 1.2.4 =
+Trivial update: minor unit test tweaks, noted compatibility through WP 4.4+, and updated copyright date
 
 = 1.2.3 =
 Trivial update: noted compatibility through WP 4.3+
