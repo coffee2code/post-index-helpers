@@ -46,7 +46,7 @@ Links: [Plugin Homepage](http://coffee2code.com/wp-plugins/post-index-helpers/) 
 
 == Installation ==
 
-1. Unzip `post-index-helpers.zip` inside the `/wp-content/plugins/` directory (or install via the built-in WordPress plugin installer)
+1. Install via the built-in WordPress plugin installer. Or download and unzip `qpost-index-helpers.zip` inside the plugins directory for your site (typically `wp-content/plugins/`)
 1. Activate the plugin through the 'Plugins' admin menu in WordPress
 1. Use one or more of the provided template tags in theme template file(s) as desired
 
@@ -133,6 +133,7 @@ Integer value representing the ID of the post.
 * Change: Default `WP_TESTS_DIR` to `/tmp/wordpress-tests-lib` rather than erroring out if not defined via environment variable.
 * Change: Enable more error output for unit tests.
 * Change: Note compatibility through WP 4.7+.
+* Change: Minor readme.txt improvements.
 * Change: Update copyright date (2017).
 
 = 1.2.4 (2015-12-16) =
