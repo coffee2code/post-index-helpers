@@ -131,6 +131,7 @@ Integer value representing the ID of the post.
 
 = () =
 * Change: Default `WP_TESTS_DIR` to `/tmp/wordpress-tests-lib` rather than erroring out if not defined via environment variable.
+* Change: Enable more error output for unit tests.
 
 = 1.2.4 (2015-12-16) =
 * Change: Note compatibility through WP 4.4+.
