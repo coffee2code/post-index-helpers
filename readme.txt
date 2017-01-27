@@ -206,6 +206,9 @@ Integer value representing the ID of the post.
 
 == Upgrade Notice ==
 
+= 1.2.5 =
+Trivial update: tweaked readme, changed unit test bootstrap, noted compatibility through WP 4.7+, and updated copyright date
+
 = 1.2.4 =
 Trivial update: minor unit test tweaks, noted compatibility through WP 4.4+, and updated copyright date
 
