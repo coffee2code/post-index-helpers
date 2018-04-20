@@ -6,7 +6,7 @@ License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Requires at least: 2.8
 Tested up to: 4.9
-Stable tag: 1.2.5
+Stable tag: 1.2.6
 
 A variety of template tags related to the index/position of a post within a loop's listing of posts.
 
@@ -129,7 +129,7 @@ Integer value representing the ID of the post.
 
 == Changelog ==
 
-= () =
+= 1.2.6 (2018-04-20) =
 * New: Add README.md
 * Change: Add GitHub link to readme
 * Change: Unit tests: Minor whitespace tweaks to bootstrap
@@ -212,6 +212,9 @@ Integer value representing the ID of the post.
 
 
 == Upgrade Notice ==
+
+= 1.2.6 =
+Trivial update: added README.md, noted compatibility through WP 4.9+, and updated copyright date (2018)
 
 = 1.2.5 =
 Trivial update: tweaked readme, changed unit test bootstrap, noted compatibility through WP 4.7+, and updated copyright date
