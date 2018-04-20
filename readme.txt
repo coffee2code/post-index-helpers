@@ -130,6 +130,7 @@ Integer value representing the ID of the post.
 == Changelog ==
 
 = () =
+* New: Add README.md
 * Change: Add GitHub link to readme
 * Change: Unit tests: Minor whitespace tweaks to bootstrap
 * Change: Note compatibility through WP 4.9+
