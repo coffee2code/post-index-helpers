@@ -131,6 +131,7 @@ Integer value representing the ID of the post.
 
 = () =
 * Change: Add GitHub link to readme
+* Change: Unit tests: Minor whitespace tweaks to bootstrap
 * Change: Note compatibility through WP 4.9+
 * Change: Update copyright date (2018)
 
