@@ -131,6 +131,7 @@ Integer value representing the ID of the post.
 
 = 1.2.6 (2018-04-20) =
 * New: Add README.md
+* New: Add LICENSE file
 * Change: Add GitHub link to readme
 * Change: Unit tests: Minor whitespace tweaks to bootstrap
 * Change: Note compatibility through WP 4.9+
