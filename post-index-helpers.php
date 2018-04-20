@@ -10,7 +10,7 @@
  * License URI: http://www.gnu.org/licenses/gpl-2.0.html
  * Description: A variety of template tags related to the index/position of a post within a loop's listing of posts.
  *
- * Compatible with WordPress 2.8 through 4.7+.
+ * Compatible with WordPress 2.8 through 4.9+.
  *
  * =>> Read the accompanying readme.txt file for instructions and documentation.
  * =>> Also, visit the plugin's homepage for additional information and updates.
