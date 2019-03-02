@@ -7,7 +7,7 @@
  * Author URI:  http://coffee2code.com/
  * Text Domain: post-index-helpers
  * License:     GPLv2 or later
- * License URI: http://www.gnu.org/licenses/gpl-2.0.html
+ * License URI: https://www.gnu.org/licenses/gpl-2.0.html
  * Description: A variety of template tags related to the index/position of a post within a loop's listing of posts.
  *
  * Compatible with WordPress 2.8 through 4.9+.
