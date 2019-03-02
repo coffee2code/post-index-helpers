@@ -46,7 +46,7 @@ Links: [Plugin Homepage](http://coffee2code.com/wp-plugins/post-index-helpers/) 
 
 == Installation ==
 
-1. Install via the built-in WordPress plugin installer. Or download and unzip `qpost-index-helpers.zip` inside the plugins directory for your site (typically `wp-content/plugins/`)
+1. Install via the built-in WordPress plugin installer. Or download and unzip `post-index-helpers.zip` inside the plugins directory for your site (typically `wp-content/plugins/`)
 1. Activate the plugin through the 'Plugins' admin menu in WordPress
 1. Use one or more of the provided template tags in theme template file(s) as desired
 
@@ -130,6 +130,7 @@ Integer value representing the ID of the post.
 == Changelog ==
 
 = () =
+* Fix: Correct typo in readme docs
 * Change: Note compatibility through WP 5.1+
 * Change: Update copyright date (2019)
 * Change: Update License URI to be HTTPS
