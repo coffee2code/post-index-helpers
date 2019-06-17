@@ -6,7 +6,7 @@ License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Requires at least: 2.8
 Tested up to: 5.2
-Stable tag: 1.2.7
+Stable tag: 1.2.8
 
 A variety of template tags related to the index/position of a post within a loop's listing of posts.
 
@@ -129,6 +129,12 @@ Integer value representing the ID of the post.
 
 == Changelog ==
 
+= 1.2.8 (2019-06-16) =
+* New: Add CHANGELOG.md file and move all but most recent changelog entries into it
+* Change: Update unit test install script and bootstrap to use latest WP unit test repo
+* Change: Note compatibility through WP 5.2+
+* Change: Split paragraph in README.md's "Support" section into two
+
 = 1.2.7 (2019-03-01) =
 * Fix: Correct typo in readme docs
 * Change: Note compatibility through WP 5.1+
@@ -147,6 +153,9 @@ _Full changelog is available in [CHANGELOG.md](https://github.com/coffee2code/po
 
 
 == Upgrade Notice ==
+
+= 1.2.8 =
+Trivial update: created CHANGELOG.md to store historical changelog outside of readme.txt, modernized unit tests, noted compatibility through WP 5.2+
 
 = 1.2.7 =
 Trivial update: noted compatibility through WP 5.1+ and updated copyright date (2019)

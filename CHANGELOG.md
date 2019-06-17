@@ -1,6 +1,6 @@
 # Changelog
 
-## _(in-progress)_
+## 1.2.8 _(2019-06-16)_
 * New: Add CHANGELOG.md file and move all but most recent changelog entries into it
 * Change: Update unit test install script and bootstrap to use latest WP unit test repo
 * Change: Note compatibility through WP 5.2+
