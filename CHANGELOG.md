@@ -4,6 +4,7 @@
 * New: Add CHANGELOG.md file and move all but most recent changelog entries into it
 * Change: Update unit test install script and bootstrap to use latest WP unit test repo
 * Change: Note compatibility through WP 5.2+
+* Change: Split paragraph in README.md's "Support" section into two
 
 ## 1.2.7_(2019-03-01)_
 * Fix: Correct typo in readme docs
