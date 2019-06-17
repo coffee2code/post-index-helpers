@@ -2,6 +2,7 @@
 
 ## _(in-progress)_
 * New: Add CHANGELOG.md file and move all but most recent changelog entries into it
+* Change: Note compatibility through WP 5.2+
 
 ## 1.2.7_(2019-03-01)_
 * Fix: Correct typo in readme docs
