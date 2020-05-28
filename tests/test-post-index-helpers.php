@@ -125,6 +125,10 @@ class Post_Index_Helpers_Test extends WP_UnitTestCase {
 		$this->assertEquals( -1, c2c_get_the_index() );
 	}
 
+	public function test_get_the_index_of_invalid_arg() {
+		$this->assertEquals( -1, c2c_get_the_index( 'a' ) );
+	}
+
 	public function test_get_the_index_start_of_loop() {
 		$this->loop();
 

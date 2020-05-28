@@ -115,7 +115,7 @@ if ( ! function_exists( 'c2c_get_the_index' ) ) {
 			global $wp_query;
 		}
 
-		return $wp_query->current_post;
+		return isset( $wp_query->current_post ) ? $wp_query->current_post : -1;
 	}
 }
 
