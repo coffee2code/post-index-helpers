@@ -245,6 +245,8 @@ if ( ! function_exists( 'c2c_the_index' ) ) {
 	 * @param WP_Query $wp_query A WP_Query object. If not defined or null, then uses the global $wp_query
 	 */
 	function c2c_the_index( $wp_query = null ) {
-		echo c2c_get_the_index( $wp_query );
+		$index = c2c_get_the_index( $wp_query );
+
+		echo $index >= 0 ? $index : '';
 	}
 }

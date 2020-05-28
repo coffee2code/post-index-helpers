@@ -305,8 +305,14 @@ class Post_Index_Helpers_Test extends WP_UnitTestCase {
 		$this->expectOutputRegex( '/^2$/', c2c_the_index() );
 	}
 
+	public function test_the_index_for_valid_index_of_0() {
+		$this->loop();
+
+		$this->expectOutputRegex( '/^0$/', c2c_the_index() );
+	}
+
 	public function test_the_index_for_invalid_index() {
-		$this->expectOutputRegex( '/^-1$/', c2c_the_index() );
+		$this->expectOutputRegex( '/^$/', c2c_the_index() );
 	}
 
 }
