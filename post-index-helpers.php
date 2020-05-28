@@ -45,7 +45,8 @@ if ( ! function_exists( 'c2c_get_last_index' ) ) {
 	/**
 	 * Gets the index number for the last post in the loop listing
 	 *
-	 * @param  WP_Query $wp_query A WP_Query object. If not defined or null, then uses the global $wp_query
+	 * @param WP_Query $wp_query Optional. A WP_Query object. If not defined or
+	 *                           null, then uses the global query object.
 	 * @return int      Index for last post in the loop listing
 	 */
 	function c2c_get_last_index( $wp_query = null ) {
@@ -61,8 +62,9 @@ if ( ! function_exists( 'c2c_get_post_by_index' ) ) {
 	/**
 	 * Get post based on specified index
 	 *
-	 * @param int           $index    The index at which to get the post from
-	 * @param WP_Query      $wp_query A WP_Query object. If not defined or null, then uses the global $wp_query
+	 * @param int      $index    The index at which to get the post from
+	 * @param WP_Query $wp_query Optional. A WP_Query object. If not defined or
+	 *                           null, then uses the global query object.
 	 * @return WP_Post|null Post data
 	 */
 	function c2c_get_post_by_index( $index, $wp_query = null ) {
@@ -79,7 +81,8 @@ if ( ! function_exists( 'c2c_get_posts_by_index' ) ) {
 	 * Get posts based on specified array of indexes
 	 *
 	 * @param array    $indexes  An array of indexes at which to get the post from
-	 * @param WP_Query $wp_query A WP_Query object. If not defined or null, then uses the global $wp_query
+	 * @param WP_Query $wp_query Optional. A WP_Query object. If not defined or
+	 *                           null, then uses the global query object.
 	 * @return array   Posts
 	 */
 	function c2c_get_posts_by_index( $indexes, $wp_query = null ) {
@@ -103,7 +106,8 @@ if ( ! function_exists( 'c2c_get_the_index' ) ) {
 	/**
 	 * Get the index for the current post
 	 *
-	 * @param WP_Query $wp_query A WP_Query object. If not defined or null, then uses the global $wp_query
+	 * @param WP_Query $wp_query Optional. A WP_Query object. If not defined or
+	 *                           null, then uses the global query object.
 	 * @return int     Index of current post
 	 */
 	function c2c_get_the_index( $wp_query = null ) {
@@ -120,7 +124,8 @@ if ( ! function_exists( 'c2c_is_at_index' ) ) {
 	 * Is the current index at the specified index?
 	 *
 	 * @param int      $index    The index to check if it is the current index.
-	 * @param WP_Query $wp_query A WP_Query object. If not defined or null, then uses the global $wp_query
+	 * @param WP_Query $wp_query Optional. A WP_Query object. If not defined or
+	 *                           null, then uses the global query object.
 	 * @return bool    True if the current index is at the specified index, otherwise false
 	 */
 	function c2c_is_at_index( $index, $wp_query = null ) {
@@ -132,7 +137,8 @@ if ( ! function_exists( 'c2c_is_even' ) ) {
 	/**
 	 * Is the current post at an even position? (i.e. 0, 2, 4, ...)
 	 *
-	 * @param WP_Query $wp_query A WP_Query object. If not defined or null, then uses the global $wp_query
+	 * @param WP_Query $wp_query Optional. A WP_Query object. If not defined or
+	 *                           null, then uses the global query object.
 	 * @return bool    True if the post is at an even position, otherwise false
 	 */
 	function c2c_is_even( $wp_query = null ) {
@@ -146,7 +152,8 @@ if ( ! function_exists( 'c2c_is_first' ) ) {
 	/**
 	 * Is the current post the first listed post?
 	 *
-	 * @param WP_Query $wp_query A WP_Query object. If not defined or null, then uses the global $wp_query
+	 * @param WP_Query $wp_query Optional. A WP_Query object. If not defined or
+	 *                           null, then uses the global query object.
 	 * @return bool    True if the post is the first post, otherwise false
 	 */
 	function c2c_is_first( $wp_query = null ) {
@@ -161,7 +168,8 @@ if ( ! function_exists( 'c2c_is_index_within' ) ) {
 	 * @param int      $start_index The index at the start of the range (value is inclusive)
 	 * @param int      $end_index   The index at the end of the range (value is inclusive)
 	 * @param int      $index       The index to check if it is within the specified range. If null, then uses index of current post.
-	 * @param WP_Query $wp_query    A WP_Query object. If not defined or null, then uses the global $wp_query
+	 * @param WP_Query $wp_query    Optional. A WP_Query object. If not defined or
+	 *                              null, then uses the global query object.
 	 * @return bool    True if the index is within the specified range, otherwise false
 	 */
 	function c2c_is_index_within( $start_index, $end_index, $index = null, $wp_query = null ) {
@@ -177,7 +185,8 @@ if ( ! function_exists( 'c2c_is_last' ) ) {
 	/**
 	 * Is the current post the last listed post?
 	 *
-	 * @param WP_Query $wp_query A WP_Query object. If not defined or null, then uses the global $wp_query
+	 * @param WP_Query $wp_query Optional. A WP_Query object. If not defined or
+	 *                           null, then uses the global query object.
 	 * @return bool    True if the post is the last post, otherwise false
 	 */
 	function c2c_is_last( $wp_query = null ) {
@@ -190,7 +199,8 @@ if ( ! function_exists( 'c2c_is_odd' ) ) {
 	/**
 	 * Is the current post at an odd position? (i.e. 1, 3, 5, ...)
 	 *
-	 * @param WP_Query $wp_query A WP_Query object. If not defined or null, then uses the global $wp_query
+	 * @param WP_Query $wp_query Optional. A WP_Query object. If not defined or
+	 *                           null, then uses the global query object.
 	 * @return bool    True if the post is at an odd position, otherwise false
 	 */
 	function c2c_is_odd( $wp_query = null ) {
@@ -203,7 +213,8 @@ if ( ! function_exists( 'c2c_is_post_in_loop' ) ) {
 	 * Is the specified post within the current loop?
 	 *
 	 * @param int      $post_id  The ID of the post to check for
-	 * @param WP_Query $wp_query A WP_Query object. If not defined or null, then uses the global $wp_query
+	 * @param WP_Query $wp_query Optional. A WP_Query object. If not defined or
+	 *                           null, then uses the global query object.
 	 * @return bool    True if the post is part of the loop, otherwise false
 	 */
 	function c2c_is_post_in_loop( $post_id, $wp_query = null ) {
@@ -230,7 +241,8 @@ if ( ! function_exists( 'c2c_is_valid_index' ) ) {
 	 * posts in the current loop listing.
 	 *
 	 * @param int      $index    The index to check for validity
-	 * @param WP_Query $wp_query A WP_Query object. If not defined or null, then uses the global $wp_query
+	 * @param WP_Query $wp_query Optional. A WP_Query object. If not defined or
+	 *                           null, then uses the global query object.
 	 * @return bool    True if the post is the last post, otherwise false
 	 */
 	function c2c_is_valid_index( $index, $wp_query = null ) {
@@ -242,7 +254,8 @@ if ( ! function_exists( 'c2c_the_index' ) ) {
 	/**
 	 * Echo the current post's index
 	 *
-	 * @param WP_Query $wp_query A WP_Query object. If not defined or null, then uses the global $wp_query
+	 * @param WP_Query $wp_query Optional. A WP_Query object. If not defined or
+	 *                           null, then uses the global query object.
 	 */
 	function c2c_the_index( $wp_query = null ) {
 		$index = c2c_get_the_index( $wp_query );

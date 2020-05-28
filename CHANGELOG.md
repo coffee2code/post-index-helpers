@@ -4,6 +4,7 @@
 * Change: In `c2c_the_index()`, echo an empty string if index is invalid
 * Change: Use HTTPS for link to WP SVN repository in bin script for configuring unit tests
 * Change: Note compatibility through WP 5.4+
+* Change: Explicitly document optional arguments as such, per WP core documentation standards
 * Change: Update links to coffee2code.com to be HTTPS
 * Change: Unit tests: Add tests for `c2c_the_index()`
 
