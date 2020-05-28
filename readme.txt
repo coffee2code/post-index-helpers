@@ -41,7 +41,7 @@ Please see the Template Tags section (in some places found under the Other Notes
 
 Note that index counting begins at 0, which means the first item has an index of 0. An index of -1 indicates no posts were found.
 
-Links: [Plugin Homepage](http://coffee2code.com/wp-plugins/post-index-helpers/) | [Plugin Directory Page](https://wordpress.org/plugins/post-index-helpers/) | [GitHub](https://github.com/coffee2code/post-index-helpers/) | [Author Homepage](http://coffee2code.com)
+Links: [Plugin Homepage](https://coffee2code.com/wp-plugins/post-index-helpers/) | [Plugin Directory Page](https://wordpress.org/plugins/post-index-helpers/) | [GitHub](https://github.com/coffee2code/post-index-helpers/) | [Author Homepage](https://coffee2code.com)
 
 
 == Installation ==
