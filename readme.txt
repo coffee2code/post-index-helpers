@@ -6,7 +6,7 @@ License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Requires at least: 2.8
 Tested up to: 5.4
-Stable tag: 1.2.9
+Stable tag: 1.3
 
 A variety of template tags related to the index/position of a post within a loop's listing of posts.
 
@@ -129,6 +129,15 @@ Integer value representing the ID of the post.
 
 == Changelog ==
 
+= 1.3 (2020-05-28) =
+* Change: In `c2c_the_index()`, echo an empty string if index is invalid
+* Change: In `c2c_get_the_index()`, ensure object property exists before referencing it
+* Change: Use HTTPS for link to WP SVN repository in bin script for configuring unit tests
+* Change: Note compatibility through WP 5.4+
+* Change: Explicitly document optional arguments as such, per WP core documentation standards
+* Change: Update links to coffee2code.com to be HTTPS
+* Change: Unit tests: Add tests for `c2c_the_index()`
+
 = 1.2.9 (2019-12-23) =
 * Change: Note compatibility through WP 5.3+
 * Change: Update copyright date (2020)
@@ -139,16 +148,13 @@ Integer value representing the ID of the post.
 * Change: Note compatibility through WP 5.2+
 * Change: Split paragraph in README.md's "Support" section into two
 
-= 1.2.7 (2019-03-01) =
-* Fix: Correct typo in readme docs
-* Change: Note compatibility through WP 5.1+
-* Change: Update copyright date (2019)
-* Change: Update License URI to be HTTPS
-
 _Full changelog is available in [CHANGELOG.md](https://github.com/coffee2code/post-index-helpers/blob/master/CHANGELOG.md)._
 
 
 == Upgrade Notice ==
+
+= 1.3 =
+Minor update: Changed `c2c_the_index()` to echo empty string if index is invalid, prevented warning if invalid argument is sent to `c2c_get_the_index(), added TODO.md file, updated a few URLs to be HTTPS, and noted compatibility through WP 5.4+
 
 = 1.2.9 =
 Trivial update: noted compatibility through WP 5.3+ and updated copyright date (2020)

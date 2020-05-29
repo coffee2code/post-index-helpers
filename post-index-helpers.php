@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Post Index Helpers
- * Version:     1.2.9
+ * Version:     1.3
  * Plugin URI:  https://coffee2code.com/wp-plugins/post-index-helpers/
  * Author:      Scott Reilly
  * Author URI:  https://coffee2code.com/
@@ -18,7 +18,7 @@
  *
  * @package Post_Index_Helpers
  * @author  Scott Reilly
- * @version 1.2.9
+ * @version 1.3
  */
 
 /*

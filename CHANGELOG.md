@@ -1,6 +1,6 @@
 # Changelog
 
-## _(in-progress)_
+## 1.3 _(2020-05-28)_
 * Change: In `c2c_the_index()`, echo an empty string if index is invalid
 * Change: In `c2c_get_the_index()`, ensure object property exists before referencing it
 * Change: Use HTTPS for link to WP SVN repository in bin script for configuring unit tests
