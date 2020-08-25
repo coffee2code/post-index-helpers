@@ -154,7 +154,7 @@ _Full changelog is available in [CHANGELOG.md](https://github.com/coffee2code/po
 == Upgrade Notice ==
 
 = 1.3 =
-Minor update: Changed `c2c_the_index()` to echo empty string if index is invalid, prevented warning if invalid argument is sent to `c2c_get_the_index(), added TODO.md file, updated a few URLs to be HTTPS, and noted compatibility through WP 5.4+
+Minor update: Changed `c2c_the_index()` to echo empty string if index is invalid, prevented warning if invalid argument is sent to `c2c_get_the_index(), updated a few URLs to be HTTPS, and noted compatibility through WP 5.4+
 
 = 1.2.9 =
 Trivial update: noted compatibility through WP 5.3+ and updated copyright date (2020)
