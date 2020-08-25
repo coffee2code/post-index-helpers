@@ -1,5 +1,8 @@
 # Changelog
 
+## _(in-progress)_
+* Change: Note compatibility through WP 5.5+
+
 ## 1.3 _(2020-05-28)_
 * Change: In `c2c_the_index()`, echo an empty string if index is invalid
 * Change: In `c2c_get_the_index()`, ensure object property exists before referencing it
