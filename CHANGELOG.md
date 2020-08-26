@@ -2,6 +2,7 @@
 
 ## _(in-progress)_
 * New: Support action invocation as alternative to calling `c2c_the_index()`
+* New: Add TODO.md for newly added potential TODO items
 * Change: Restructure unit test file structure
     * New: Create new subdirectory `phpunit/` to house all files related to unit testing
     * Change: Move `bin/` to `phpunit/bin/`
