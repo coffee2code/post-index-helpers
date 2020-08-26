@@ -6,7 +6,7 @@ License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Requires at least: 2.8
 Tested up to: 5.5
-Stable tag: 1.3
+Stable tag: 1.4
 
 A variety of template tags related to the index/position of a post within a loop's listing of posts.
 
@@ -129,6 +129,17 @@ Integer value representing the ID of the post.
 
 == Changelog ==
 
+= 1.4 (2020-08-25) =
+* New: Support action invocation as alternative to calling `c2c_the_index()`
+* New: Add TODO.md for newly added potential TODO items
+* Change: Restructure unit test file structure
+    * New: Create new subdirectory `phpunit/` to house all files related to unit testing
+    * Change: Move `bin/` to `phpunit/bin/`
+    * Change: Move `tests/bootstrap.php` to `phpunit/`
+    * Change: Move `tests/` to `phpunit/tests/`
+    * Change: Rename `phpunit.xml` to `phpunit.xml.dist` per best practices
+* Change: Note compatibility through WP 5.5+
+
 = 1.3 (2020-05-28) =
 * Change: In `c2c_the_index()`, echo an empty string if index is invalid
 * Change: In `c2c_get_the_index()`, ensure object property exists before referencing it
@@ -142,16 +153,13 @@ Integer value representing the ID of the post.
 * Change: Note compatibility through WP 5.3+
 * Change: Update copyright date (2020)
 
-= 1.2.8 (2019-06-16) =
-* New: Add CHANGELOG.md file and move all but most recent changelog entries into it
-* Change: Update unit test install script and bootstrap to use latest WP unit test repo
-* Change: Note compatibility through WP 5.2+
-* Change: Split paragraph in README.md's "Support" section into two
-
 _Full changelog is available in [CHANGELOG.md](https://github.com/coffee2code/post-index-helpers/blob/master/CHANGELOG.md)._
 
 
 == Upgrade Notice ==
+
+= 1.4 =
+Trivial update: Added support for action invocation of `c2c_the_index()`, restructured unit test file structure, added a TODO.md file, and noted compatibility through WP 5.5+.
 
 = 1.3 =
 Minor update: Changed `c2c_the_index()` to echo empty string if index is invalid, prevented warning if invalid argument is sent to `c2c_get_the_index(), updated a few URLs to be HTTPS, and noted compatibility through WP 5.4+
