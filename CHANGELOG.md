@@ -1,6 +1,7 @@
 # Changelog
 
 ## _(in-progress)_
+* New: Support action invocation as alternative to calling `c2c_the_index()`
 * Change: Restructure unit test file structure
     * New: Create new subdirectory `phpunit/` to house all files related to unit testing
     * Change: Move `bin/` to `phpunit/bin/`

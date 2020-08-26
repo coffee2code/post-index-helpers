@@ -262,4 +262,5 @@ if ( ! function_exists( 'c2c_the_index' ) ) {
 
 		echo $index >= 0 ? $index : '';
 	}
+	add_action( 'c2c_the_index', 'c2c_the_index' );
 }

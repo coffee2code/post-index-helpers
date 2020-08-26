@@ -81,7 +81,7 @@ Is the current post (or one at the specified index) within the bounds of a speci
 Is the specified post within the current loop?
 * `<?php function c2c_is_valid_index( $index, $wp_query = null ) ?>`
 Is the specified index valid?  Validity is defined as being within the range of indexes actively occupied by posts in the current loop listing.
-* `<?php function c2c_the_index( $wp_query = null ) ?>`
+* `<?php function c2c_the_index( $wp_query = null ) ?>` or more safely `<?php do_action( 'c2c_the_index', $wp_query  ); ?>`
 Echo the current post's index
 
 = Arguments =
