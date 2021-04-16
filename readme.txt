@@ -6,7 +6,7 @@ License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Requires at least: 2.8
 Tested up to: 5.7
-Stable tag: 1.4
+Stable tag: 1.4.1
 
 A variety of template tags related to the index/position of a post within a loop's listing of posts.
 
@@ -129,6 +129,10 @@ Integer value representing the ID of the post.
 
 == Changelog ==
 
+= 1.4.1 (2021-04-15) =
+* Change: Note compatibility through WP 5.7+
+* Change: Update copyright date (2021)
+
 = 1.4 (2020-08-25) =
 * New: Support action invocation as alternative to calling `c2c_the_index()`
 * New: Add TODO.md for newly added potential TODO items
@@ -149,14 +153,13 @@ Integer value representing the ID of the post.
 * Change: Update links to coffee2code.com to be HTTPS
 * Change: Unit tests: Add tests for `c2c_the_index()`
 
-= 1.2.9 (2019-12-23) =
-* Change: Note compatibility through WP 5.3+
-* Change: Update copyright date (2020)
-
 _Full changelog is available in [CHANGELOG.md](https://github.com/coffee2code/post-index-helpers/blob/master/CHANGELOG.md)._
 
 
 == Upgrade Notice ==
+
+= 1.4.1 =
+Trivial update: noted compatibility through WP 5.7+ and updated copyright date (2021)
 
 = 1.4 =
 Trivial update: Added support for action invocation of `c2c_the_index()`, restructured unit test file structure, added a TODO.md file, and noted compatibility through WP 5.5+.
