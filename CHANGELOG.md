@@ -1,5 +1,8 @@
 # Changelog
 
+## _(in-progress)_
+* Change: Update copyright date (2021)
+
 ## 1.4 _(2020-08-25)_
 * New: Support action invocation as alternative to calling `c2c_the_index()`
 * New: Add TODO.md for newly added potential TODO items
