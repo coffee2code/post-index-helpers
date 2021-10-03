@@ -14,7 +14,9 @@ This plugin is available in the WordPress Plugin Directory: https://wordpress.or
 
 ## Additional Documentation
 
-See [readme.txt](https://github.com/coffee2code/post-index-helpers/blob/master/readme.txt) for additional usage information. See [CHANGELOG.md](CHANGELOG.md) for the list of changes for each release.
+* See [readme.txt](https://github.com/coffee2code/post-index-helpers/blob/master/readme.txt) for additional usage information.
+* See [DEVELOPER-DOCS.md](DEVELOPER_DOCS.md) for developer-related documentation.
+* See [CHANGELOG.md](CHANGELOG.md) for the list of changes for each release.
 
 
 ## Support
