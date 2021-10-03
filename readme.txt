@@ -6,7 +6,7 @@ License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Requires at least: 2.8
 Tested up to: 5.8
-Stable tag: 1.4.1
+Stable tag: 1.4.2
 
 A variety of template tags related to the index/position of a post within a loop's listing of posts.
 
@@ -74,6 +74,17 @@ As an overview, these are the template tags provided the plugin:
 
 == Changelog ==
 
+= 1.4.2 (2021-10-02) =
+* New: Add DEVELOPER-DOCS.md and move template tag documentation into it
+* Change: Note compatibility through WP 5.8+
+* Unit tests:
+    * Change: Restructure unit test directories
+        * Change: Move `phpunit/` into `tests/phpunit/`
+        * Change: Move `phpunit/bin/` into `tests/`
+    * Change: Remove 'test-' prefix from unit test file
+    * Change: In bootstrap, store path to plugin file constant
+    * Change: In bootstrap, add backcompat for PHPUnit pre-v6.0
+
 = 1.4.1 (2021-04-15) =
 * Change: Note compatibility through WP 5.7+
 * Change: Update copyright date (2021)
@@ -89,19 +100,13 @@ As an overview, these are the template tags provided the plugin:
     * Change: Rename `phpunit.xml` to `phpunit.xml.dist` per best practices
 * Change: Note compatibility through WP 5.5+
 
-= 1.3 (2020-05-28) =
-* Change: In `c2c_the_index()`, echo an empty string if index is invalid
-* Change: In `c2c_get_the_index()`, ensure object property exists before referencing it
-* Change: Use HTTPS for link to WP SVN repository in bin script for configuring unit tests
-* Change: Note compatibility through WP 5.4+
-* Change: Explicitly document optional arguments as such, per WP core documentation standards
-* Change: Update links to coffee2code.com to be HTTPS
-* Change: Unit tests: Add tests for `c2c_the_index()`
-
 _Full changelog is available in [CHANGELOG.md](https://github.com/coffee2code/post-index-helpers/blob/master/CHANGELOG.md)._
 
 
 == Upgrade Notice ==
+
+= 1.4.2 =
+Trivial update: added DEVELOPER-DOCS.md, noted compatibility through WP 5.8+, and minor reorganization and tweaks to unit tests
 
 = 1.4.1 =
 Trivial update: noted compatibility through WP 5.7+ and updated copyright date (2021)
