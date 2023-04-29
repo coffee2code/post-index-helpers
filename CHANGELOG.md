@@ -3,6 +3,7 @@
 ## _(in-progress)_
 * Change: Note compatibility through WP 6.3+
 * Change: Update copyright date (2023)
+* Fix: Fix typo for link to DEVELOPER-DOCS.md in README.md
 
 ## 1.4.2 _(2021-10-02)_
 * New: Add DEVELOPER-DOCS.md and move template tag documentation into it
