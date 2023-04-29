@@ -5,7 +5,7 @@ Tags: post, index, position, loop, template tags, conditional, coffee2code
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Requires at least: 2.8
-Tested up to: 5.8
+Tested up to: 6.3
 Stable tag: 1.4.2
 
 A variety of template tags related to the index/position of a post within a loop's listing of posts.
