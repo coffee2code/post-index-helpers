@@ -6,7 +6,7 @@ License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Requires at least: 2.8
 Tested up to: 6.3
-Stable tag: 1.4.2
+Stable tag: 1.4.3
 
 A variety of template tags related to the index/position of a post within a loop's listing of posts.
 
@@ -74,6 +74,11 @@ As an overview, these are the template tags provided the plugin:
 
 == Changelog ==
 
+= 1.4.3 (2023-04-29) =
+* Change: Note compatibility through WP 6.3+
+* Change: Update copyright date (2023)
+* Fix: Fix typo for link to DEVELOPER-DOCS.md in README.md
+
 = 1.4.2 (2021-10-02) =
 * New: Add DEVELOPER-DOCS.md and move template tag documentation into it
 * Change: Note compatibility through WP 5.8+
@@ -89,21 +94,13 @@ As an overview, these are the template tags provided the plugin:
 * Change: Note compatibility through WP 5.7+
 * Change: Update copyright date (2021)
 
-= 1.4 (2020-08-25) =
-* New: Support action invocation as alternative to calling `c2c_the_index()`
-* New: Add TODO.md for newly added potential TODO items
-* Change: Restructure unit test file structure
-    * New: Create new subdirectory `phpunit/` to house all files related to unit testing
-    * Change: Move `bin/` to `phpunit/bin/`
-    * Change: Move `tests/bootstrap.php` to `phpunit/`
-    * Change: Move `tests/` to `phpunit/tests/`
-    * Change: Rename `phpunit.xml` to `phpunit.xml.dist` per best practices
-* Change: Note compatibility through WP 5.5+
-
 _Full changelog is available in [CHANGELOG.md](https://github.com/coffee2code/post-index-helpers/blob/master/CHANGELOG.md)._
 
 
 == Upgrade Notice ==
+
+= 1.4.3 =
+Trivial update: noted compatibility through WP 6.3+ and updated copyright date (2023)
 
 = 1.4.2 =
 Trivial update: added DEVELOPER-DOCS.md, noted compatibility through WP 5.8+, and minor reorganization and tweaks to unit tests
