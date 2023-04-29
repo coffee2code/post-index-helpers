@@ -1,5 +1,8 @@
 # Changelog
 
+## _(in-progress)_
+* Change: Update copyright date (2023)
+
 ## 1.4.2 _(2021-10-02)_
 * New: Add DEVELOPER-DOCS.md and move template tag documentation into it
 * Change: Note compatibility through WP 5.8+
