@@ -5,7 +5,8 @@
  * @package Post_Index_Helpers
  */
 
-define( 'POST_INDEX_HELPERS_PLUGIN_FILE', dirname( __FILE__, 3 ) . '/post-index-helpers.php' );
+define( 'POST_INDEX_HELPERS_PLUGIN_DIR',  dirname( __FILE__, 3 ) );
+define( 'POST_INDEX_HELPERS_PLUGIN_FILE', POST_INDEX_HELPERS_PLUGIN_DIR . '/post-index-helpers.php' );
 
 ini_set( 'display_errors', 'on' );
 error_reporting( E_ALL );
