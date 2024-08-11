@@ -5,6 +5,9 @@
  * @package Post_Index_Helpers
  */
 
+// Prevent web access.
+( php_sapi_name() !== 'cli' ) && die();
+
 define( 'POST_INDEX_HELPERS_PLUGIN_DIR',  dirname( __FILE__, 3 ) );
 define( 'POST_INDEX_HELPERS_PLUGIN_FILE', POST_INDEX_HELPERS_PLUGIN_DIR . '/post-index-helpers.php' );
 
