@@ -1,6 +1,6 @@
 # Changelog
 
-## _(in-progress)_
+## 1.4.4 _(2024-08-10)_
 * Hardening: Ensure `c2c_the_index()` only outputs variable as an integer
 * Change: Note compatibility through WP 6.6+
 * Change: Update copyright date (2024)

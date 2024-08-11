@@ -6,7 +6,7 @@ License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Requires at least: 2.8
 Tested up to: 6.6
-Stable tag: 1.4.3
+Stable tag: 1.4.4
 
 A variety of template tags related to the index/position of a post within a loop's listing of posts.
 
@@ -74,6 +74,18 @@ As an overview, these are the template tags provided the plugin:
 
 == Changelog ==
 
+= 1.4.4 (2024-08-10) =
+* Change: Note compatibility through WP 6.6+
+* Change: Update copyright date (2024)
+* New: Add `.gitignore` file
+* Change: Reduce number of 'Tags' from `readme.txt`
+* Change: Remove development and testing-related files from release packaging
+* Unit tests:
+    * Hardening: Prevent direct web access to `bootstrap.php`
+    * Allow tests to run against current versions of WordPress
+    * New: Add `composer.json` for PHPUnit Polyfill dependency
+    * Change: In bootstrap, store path to plugin directory in a constant
+
 = 1.4.3 (2023-04-29) =
 * Change: Note compatibility through WP 6.3+
 * Change: Update copyright date (2023)
@@ -90,14 +102,13 @@ As an overview, these are the template tags provided the plugin:
     * Change: In bootstrap, store path to plugin file constant
     * Change: In bootstrap, add backcompat for PHPUnit pre-v6.0
 
-= 1.4.1 (2021-04-15) =
-* Change: Note compatibility through WP 5.7+
-* Change: Update copyright date (2021)
-
 _Full changelog is available in [CHANGELOG.md](https://github.com/coffee2code/post-index-helpers/blob/master/CHANGELOG.md)._
 
 
 == Upgrade Notice ==
+
+= 1.4.4 =
+Trivial update: noted compatibility through WP 6.6+, removed unit tests from release packaging, and updated copyright date (2024)
 
 = 1.4.3 =
 Trivial update: noted compatibility through WP 6.3+ and updated copyright date (2023)
