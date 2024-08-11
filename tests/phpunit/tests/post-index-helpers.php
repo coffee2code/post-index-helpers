@@ -319,6 +319,15 @@ class Post_Index_Helpers_Test extends WP_UnitTestCase {
 		$this->expectOutputRegex( '/^$/', c2c_the_index() );
 	}
 
+	public function test_the_index_forces_output_to_integer() {
+		global $wp_query;
+		$this->loop();
+		// This is unlikely to happen unless the site is running untrustworthy code.
+		$wp_query->current_post = 'this is not an <strong>integer</strong>';
+
+		$this->expectOutputRegex( '/^0$/', c2c_the_index() );
+	}
+
 	/* action: c2c_the_index() */
 
 	public function test_action_c2c_the_index_for_valid_index() {

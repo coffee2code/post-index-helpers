@@ -1,6 +1,7 @@
 # Changelog
 
 ## _(in-progress)_
+* Hardening: Ensure `c2c_the_index()` only outputs variable as an integer
 * Change: Note compatibility through WP 6.6+
 * Change: Update copyright date (2024)
 * New: Add `.gitignore` file

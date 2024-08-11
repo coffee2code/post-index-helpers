@@ -260,7 +260,7 @@ if ( ! function_exists( 'c2c_the_index' ) ) {
 	function c2c_the_index( $wp_query = null ) {
 		$index = c2c_get_the_index( $wp_query );
 
-		echo $index >= 0 ? $index : '';
+		echo $index >= 0 ? intval( $index ) : '';
 	}
 	add_action( 'c2c_the_index', 'c2c_the_index' );
 }
