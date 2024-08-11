@@ -1,7 +1,7 @@
 === Post Index Helpers ===
 Contributors: coffee2code
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6ARCFJ9TX3522
-Tags: post, index, position, loop, template tags, conditional, coffee2code
+Tags: post, index, position, loop, template tags
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Requires at least: 2.8
