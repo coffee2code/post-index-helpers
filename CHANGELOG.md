@@ -2,6 +2,7 @@
 
 ## _(in-progress)_
 * Change: Note compatibility through WP 6.6+
+* Change: Update copyright date (2024)
 
 ## 1.4.3 _(2023-04-29)_
 * Change: Note compatibility through WP 6.3+
