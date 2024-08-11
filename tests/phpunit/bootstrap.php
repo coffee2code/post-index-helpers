@@ -11,7 +11,7 @@
 define( 'POST_INDEX_HELPERS_PLUGIN_DIR',  dirname( __FILE__, 3 ) );
 define( 'POST_INDEX_HELPERS_PLUGIN_FILE', POST_INDEX_HELPERS_PLUGIN_DIR . '/post-index-helpers.php' );
 
-$polyfill_path = IF_FILE_EXISTS_PLUGIN_DIR . '/vendor/yoast/phpunit-polyfills/phpunitpolyfills-autoload.php';
+$polyfill_path = POST_INDEX_HELPERS_PLUGIN_DIR . '/vendor/yoast/phpunit-polyfills/phpunitpolyfills-autoload.php';
 if ( file_exists( $polyfill_path ) ) {
 	require $polyfill_path;
 } else {
