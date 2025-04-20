@@ -6,7 +6,7 @@ License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Requires at least: 2.8
 Tested up to: 6.8
-Stable tag: 1.4.4
+Stable tag: 1.4.5
 
 A variety of template tags related to the index/position of a post within a loop's listing of posts.
 
@@ -74,6 +74,14 @@ As an overview, these are the template tags provided the plugin:
 
 == Changelog ==
 
+= 1.4.5 (2025-04-19) =
+* Change: Note compatibility through WP 6.8+
+* Change: Note compatibility through PHP 8.3+
+* Change: Update copyright date (2025)
+* Unit tests:
+    * Change: Explicitly define return type for overridden methods
+    * New: Add `composer.json` for PHPUnit Polyfill dependency (supposed to have been added in v1.4.4)
+
 = 1.4.4 (2024-08-10) =
 * Change: Note compatibility through WP 6.6+
 * Change: Update copyright date (2024)
@@ -91,21 +99,13 @@ As an overview, these are the template tags provided the plugin:
 * Change: Update copyright date (2023)
 * Fix: Fix typo for link to DEVELOPER-DOCS.md in README.md
 
-= 1.4.2 (2021-10-02) =
-* New: Add DEVELOPER-DOCS.md and move template tag documentation into it
-* Change: Note compatibility through WP 5.8+
-* Unit tests:
-    * Change: Restructure unit test directories
-        * Change: Move `phpunit/` into `tests/phpunit/`
-        * Change: Move `phpunit/bin/` into `tests/`
-    * Change: Remove 'test-' prefix from unit test file
-    * Change: In bootstrap, store path to plugin file constant
-    * Change: In bootstrap, add backcompat for PHPUnit pre-v6.0
-
 _Full changelog is available in [CHANGELOG.md](https://github.com/coffee2code/post-index-helpers/blob/master/CHANGELOG.md)._
 
 
 == Upgrade Notice ==
+
+= 1.4.5 =
+Trivial update: noted compatibility through WP 6.8+ and PHP 8.3+, and updated copyright date (2025)
 
 = 1.4.4 =
 Trivial update: noted compatibility through WP 6.6+, removed unit tests from release packaging, and updated copyright date (2024)
