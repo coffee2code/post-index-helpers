@@ -6,6 +6,7 @@
 * Change: Update copyright date (2025)
 * Unit tests:
     * Change: Explicitly define return type for overridden methods
+    * New: Add `composer.json` for PHPUnit Polyfill dependency (supposed to have been added in v1.4.4)
 
 ## 1.4.4 _(2024-08-10)_
 * Hardening: Ensure `c2c_the_index()` only outputs variable as an integer
