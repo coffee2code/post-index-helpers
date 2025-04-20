@@ -6,13 +6,13 @@ class Post_Index_Helpers_Test extends WP_UnitTestCase {
 
 	private $posts;
 
-	public function setUp() {
+	public function setUp(): void {
 		parent::setUp();
 
 		$this->setup_loop();
 	}
 
-	public function tearDown() {
+	public function tearDown(): void {
 		parent::tearDown();
 
 		wp_reset_query();
